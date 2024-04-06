@@ -5,6 +5,7 @@
     "start": "tsc && node index.js"
   },
   "dependencies": {
+    "@types/prompts": "^2.4.9",
     "prompts": "^2.4.2"
   },
   "devDependencies": {
