@@ -14,7 +14,10 @@ export default {
   plugins: [
 		json(),
 		commonjs(),
-		nodeResolve(),
+		nodeResolve({
+			moduleDirectories: ['node_modules'],
+			// extensions: ['.js', '.json', '.ts', '.tsx']
+		}),
 		alias({
       entries: [
         { find: '@', replacement: './src' },
