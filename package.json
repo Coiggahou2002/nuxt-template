@@ -1,17 +1,20 @@
 {
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "rollup -c",
     "start": "tsc && node index.js"
   },
   "dependencies": {
     "@types/prompts": "^2.4.9",
     "dotenv": "^16.4.5",
     "giget": "^1.2.3",
-    "prompts": "^2.4.2"
+    "prompts": "^2.4.2",
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^20.12.5",
+    "rollup": "^4.14.0",
     "typescript": "^5.4.4"
   }
 }
