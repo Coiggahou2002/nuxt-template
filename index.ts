@@ -1,5 +1,4 @@
-import prompts from 'prompts'
-
+import 'dotenv/config';
 
 async function main() {
     const response = await prompts({
